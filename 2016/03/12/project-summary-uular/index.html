@@ -1,0 +1,623 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="移动端,rem布局," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="项目介绍该项目是优乐健身的移动端页面。网站要求字体和边距做到自适应。因此采用了rem布局。rem布局参考资料：web app变革之rem: https://isux.tencent.com/web-app-rem.html手机端页面自适应解决方案: http://www.jianshu.com/p/b00cd3506782
+项目技术点1、rem布局rem布局非常简单，只需要将下面的JavaScri">
+<meta property="og:type" content="article">
+<meta property="og:title" content="优乐健身移动端页面制作总结">
+<meta property="og:url" content="http://wwww.iamsuperman.cn/2016/03/12/project-summary-uular/index.html">
+<meta property="og:site_name" content="Superman">
+<meta property="og:description" content="项目介绍该项目是优乐健身的移动端页面。网站要求字体和边距做到自适应。因此采用了rem布局。rem布局参考资料：web app变革之rem: https://isux.tencent.com/web-app-rem.html手机端页面自适应解决方案: http://www.jianshu.com/p/b00cd3506782
+项目技术点1、rem布局rem布局非常简单，只需要将下面的JavaScri">
+<meta property="og:updated_time" content="2016-05-06T15:08:14.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="优乐健身移动端页面制作总结">
+<meta name="twitter:description" content="项目介绍该项目是优乐健身的移动端页面。网站要求字体和边距做到自适应。因此采用了rem布局。rem布局参考资料：web app变革之rem: https://isux.tencent.com/web-app-rem.html手机端页面自适应解决方案: http://www.jianshu.com/p/b00cd3506782
+项目技术点1、rem布局rem布局非常简单，只需要将下面的JavaScri">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"hide"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> 优乐健身移动端页面制作总结 | Superman </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="http://s6.cnzz.com/stat.php?id=1257616456&web_id=1257616456" type="text/javascript"></script>
+  </div>
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Superman</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">前端开发 / 摄影爱好者 / ...</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                优乐健身移动端页面制作总结
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-12T21:50:42+08:00" content="Mar 12">
+              Mar 12
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/12/project-summary-uular/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/12/project-summary-uular/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h1><p>该项目是优乐健身的移动端页面。网站要求字体和边距做到自适应。因此采用了rem布局。<br>rem布局参考资料：<br>web app变革之rem: <a href="https://isux.tencent.com/web-app-rem.html" target="_blank" rel="external">https://isux.tencent.com/web-app-rem.html</a><br>手机端页面自适应解决方案: <a href="http://www.jianshu.com/p/b00cd3506782" target="_blank" rel="external">http://www.jianshu.com/p/b00cd3506782</a></p>
+<h1 id="项目技术点"><a href="#项目技术点" class="headerlink" title="项目技术点"></a>项目技术点</h1><h2 id="1、rem布局"><a href="#1、rem布局" class="headerlink" title="1、rem布局"></a>1、rem布局</h2><p>rem布局非常简单，只需要将下面的JavaScript代码放到你的页面中即可。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">(function (doc, win) &#123; </div><div class="line">	var docEl = doc.documentElement, resizeEvt = &apos;orientationchange&apos; in window ? &apos;orientationchange&apos; : &apos;resize&apos;, </div><div class="line">	recalc = function () &#123; </div><div class="line">	var clientWidth = docEl.clientWidth; </div><div class="line">	if (!clientWidth) return; </div><div class="line">	if(clientWidth&gt;=640)&#123; </div><div class="line">	docEl.style.fontSize = &apos;100px&apos;; </div><div class="line">	&#125;</div><div class="line">	else&#123; </div><div class="line">	docEl.style.fontSize = 100 * (clientWidth / 640) + &apos;px&apos;; </div><div class="line">	&#125;</div><div class="line">	&#125;; </div><div class="line">	if (!doc.addEventListener) return; </div><div class="line">	win.addEventListener(resizeEvt, recalc, false); </div><div class="line">	doc.addEventListener(&apos;DOMContentLoaded&apos;, recalc, false); </div><div class="line">	&#125;)(document, window);</div></pre></td></tr></table></figure></p>
+<h3 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h3><p>先解释下上面的代码，最核心的意思就是说当页面的宽度超过了640px，html的<code>font-size</code>为100px。如果小于640px，则通过<code>100 * (clientWidth / 640)</code>计算出页面的<code>font-size</code>。这时候便可以在网页中尽情使用rem了。所以涉及到宽度和距离的属性比如<code>width</code>、<code>margin</code>、<code>padding</code>、<code>font-size</code>等都可以使用rem作为单位。<br>那么设计稿中的px值要怎么转换成rem值呢？<br>我们可以将font-size的值设成100px，这样1rem = 100px。如果设计稿中的宽度是30px的话，那么就可以很方便的转换为0.3rem。<br><strong>ps:这里设置宽度为640px是根据设计稿来的，如果你拿到的设计稿是750，那么你就可以将上面的数值改为750。</strong></p>
+<h3 id="rem布局存在的问题"><a href="#rem布局存在的问题" class="headerlink" title="rem布局存在的问题"></a>rem布局存在的问题</h3><p><strong>存在的问题</strong>：在生成dom树的时候，底部用js改变html的font-size的话，会造成整个页面重新布局，这样的结果就是导致页面元素因为尺寸改变了而闪烁的情况。在页面类容大的时候，加载时页面会有明显的动态变化，<br><strong>解决办法</strong>： </p>
+<ul>
+<li>使用一个全局loading页面，在fontSize计算之后才展示真正的页面</li>
+<li>用响应式样式控制最好先用响应式，再用js。具体做法就是用CSS的<code>@media</code>根据屏幕初始化一遍html的font-size，然后在再用js计算，这样可以避免页面加载时候出现的闪烁。具体的CSS代码如下面：<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">@media only screen and (max-width: 320px)&#123;html&#123;font-size: 9px;&#125; &#125;</div><div class="line">@media only screen and (min-width: 320px) and (max-width: 352px)&#123;html&#123;font-size: 10px;&#125; &#125;</div><div class="line">@media only screen and (min-width: 352px) and (max-width: 384px)&#123;html&#123;font-size: 11px;&#125; &#125;</div><div class="line">@media only screen and (min-width: 384px) and (max-width: 416px)&#123;html&#123;font-size: 12px;&#125; &#125;</div><div class="line">@media only screen and (min-width: 416px) and (max-width: 448px)&#123;html&#123;font-size: 13px;&#125; &#125;</div><div class="line">@media only screen and (min-width: 448px) and (max-width: 480px)&#123;html&#123;font-size: 14px;&#125; &#125;</div><div class="line">@media only screen and (min-width: 480px) and (max-width: 512px)&#123;html&#123;font-size: 15px;&#125; &#125;</div><div class="line">@media only screen and (min-width: 512px) and (max-width: 544px)&#123;html&#123;font-size: 16px;&#125; &#125;</div><div class="line">@media only screen and (min-width: 544px) and (max-width: 576px)&#123;html&#123;font-size: 17px;&#125; &#125;</div><div class="line">@media only screen and (min-width: 576px) and (max-width: 608px)&#123;html&#123;font-size: 18px;&#125; &#125;</div><div class="line">@media only screen and (min-width: 608px) and (max-width: 640px)&#123;html&#123;font-size: 19px;&#125; &#125;</div><div class="line">@media only screen and (min-width: 640px)&#123;html&#123;font-size: 20px;&#125; &#125;</div><div class="line"></div><div class="line">来源： https://isux.tencent.com/web-app-rem.html</div><div class="line">```     </div><div class="line">* 采取淘宝的[flexible.js](https://github.com/amfe/lib-flexible)方案解决。</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="2、自定义select框"><a href="#2、自定义select框" class="headerlink" title="2、自定义select框"></a>2、自定义select框</h2><p>如何自定义select框的样式</p>
+<h2 id="3、移动端直接拨打电话"><a href="#3、移动端直接拨打电话" class="headerlink" title="3、移动端直接拨打电话"></a>3、移动端直接拨打电话</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"tel://110"</span>&gt;</span>电话<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>在<code>a</code>标签中使用tel://协议，后面跟着电话号码，就可以实现在移动端拨打电话。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/移动端/" rel="tag">#移动端</a>
+          
+            <a href="/tags/rem布局/" rel="tag">#rem布局</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/03/06/javascript/javascript-inherit/" rel="next" title="【JavaScript高程学习笔记】面向对象的程序设计之继承">
+                <i class="fa fa-chevron-left"></i> 【JavaScript高程学习笔记】面向对象的程序设计之继承
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/03/12/javascript/you-donot-konw-javascript-reading-notes/" rel="prev" title="【你不知道的JavasSript(上)读书笔记】第1章：作用域">
+                【你不知道的JavasSript(上)读书笔记】第1章：作用域 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/03/12/project-summary-uular/"
+           data-title="优乐健身移动端页面制作总结" data-url="http://wwww.iamsuperman.cn/2016/03/12/project-summary-uular/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://7xr6yj.com1.z0.glb.clouddn.com/hexo_avatar.png"
+               alt="Superman" />
+          <p class="site-author-name" itemprop="name">Superman</p>
+          <p class="site-description motion-element" itemprop="description">前端开发 / 摄影爱好者 / ...</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">44</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">33</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://66superman.lofter.com" target="_blank" title="Lofter">
+                  
+                    <i class="fa fa-fw fa-camera"></i>
+                  
+                  Lofter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://github.com/superman66" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#项目介绍"><span class="nav-number">1.</span> <span class="nav-text">项目介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#项目技术点"><span class="nav-number">2.</span> <span class="nav-text">项目技术点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、rem布局"><span class="nav-number">2.1.</span> <span class="nav-text">1、rem布局</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#如何使用"><span class="nav-number">2.1.1.</span> <span class="nav-text">如何使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rem布局存在的问题"><span class="nav-number">2.1.2.</span> <span class="nav-text">rem布局存在的问题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、自定义select框"><span class="nav-number">2.2.</span> <span class="nav-text">2、自定义select框</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、移动端直接拨打电话"><span class="nav-number">2.3.</span> <span class="nav-text">3、移动端直接拨打电话</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Superman</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"superman66"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+  
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>
